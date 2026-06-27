@@ -1,0 +1,600 @@
+/* ==========================
+   BABARTECH SOLUTIONS
+   PREMIUM CSS PART 1
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fc;
+color:#222;
+overflow-x:hidden;
+}
+
+/* Loader */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+color:#fff;
+font-size:30px;
+font-weight:bold;
+}
+
+/* Navbar */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.logo h2{
+color:#2563eb;
+font-size:28px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#2563eb;
+}
+
+.menu{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:120px 8%;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:#fff;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero-text span{
+color:#ffe600;
+}
+
+.hero-text h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.btn,
+.btn2{
+padding:14px 35px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn{
+background:#fff;
+color:#2563eb;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.btn2{
+border:2px solid #fff;
+color:#fff;
+}
+
+.btn2:hover{
+background:#fff;
+color:#2563eb;
+}
+
+.hero-image{
+width:40%;
+display:flex;
+justify-content:center;
+}
+
+.circle{
+width:260px;
+height:260px;
+border-radius:50%;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:90px;
+color:#2563eb;
+box-shadow:0 0 40px rgba(255,255,255,.4);
+}
+
+/* Statistics */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:70px 8%;
+background:#fff;
+}
+
+.box{
+background:#f8fafc;
+padding:30px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+}
+
+.box h2{
+font-size:38px;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+/* Titles */
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#2563eb;
+}
+
+/* About */
+
+#about{
+padding:90px 8%;
+}
+
+.about-container{
+display:flex;
+justify-content:space-between;
+gap:40px;
+}
+
+.about-text,
+.skills{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+flex:1;
+}
+
+.about-text h3,
+.skills h3{
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.about-text p{
+line-height:1.9;
+margin-bottom:15px;
+}
+
+.skills ul{
+list-style:none;
+}
+
+.skills li{
+padding:12px;
+margin:10px 0;
+background:#eef4ff;
+border-left:5px solid #2563eb;
+border-radius:10px;
+}
+
+/* Services */
+
+#services{
+padding:90px 8%;
+background:#f8fafc;
+}
+
+.service-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service-card{
+background:#fff;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.service-card:hover{
+transform:translateY(-12px);
+}
+
+.service-card i{
+font-size:55px;
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.service-card h3{
+margin-bottom:15px;
+}
+/* ==========================
+   PORTFOLIO
+========================== */
+
+#portfolio{
+padding:90px 8%;
+background:#fff;
+}
+
+.portfolio-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.portfolio-card{
+background:#f8fafc;
+padding:35px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.portfolio-card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+color:#fff;
+}
+
+.portfolio-card i{
+font-size:55px;
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.portfolio-card:hover i{
+color:#fff;
+}
+
+/* ==========================
+   WHY CHOOSE ME
+========================== */
+
+.why{
+padding:90px 8%;
+background:#f4f7fc;
+}
+
+.why-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.why-box{
+background:#fff;
+padding:30px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.why-box:hover{
+transform:translateY(-10px);
+}
+
+.why-box i{
+font-size:50px;
+color:#2563eb;
+margin-bottom:20px;
+}
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonial-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:60px 8%;
+}
+
+.review{
+background:#fff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.review:hover{
+transform:scale(1.05);
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+#contact{
+padding:90px 8%;
+background:#f8fafc;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.contact-card,
+.contact-form{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-card h3{
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.contact-card p{
+margin:15px 0;
+font-size:17px;
+}
+
+.contact-card i{
+color:#2563eb;
+margin-right:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+}
+
+.contact-form textarea{
+height:140px;
+resize:none;
+}
+
+.contact-form button{
+width:100%;
+padding:15px;
+border:none;
+background:#2563eb;
+color:#fff;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact-form button:hover{
+background:#1d4ed8;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+background:#0f172a;
+color:#fff;
+text-align:center;
+padding:40px 20px;
+}
+
+footer h2{
+margin-bottom:10px;
+}
+
+footer p{
+margin:8px 0;
+}
+
+/* ==========================
+   WHATSAPP BUTTON
+========================== */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* ==========================
+   SCROLL TOP BUTTON
+========================== */
+
+#topBtn{
+position:fixed;
+left:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#2563eb;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding-top:150px;
+}
+
+.hero-text,
+.hero-image{
+width:100%;
+}
+
+.about-container{
+flex-direction:column;
+}
+
+nav{
+display:none;
+}
+
+.menu{
+display:block;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+font-size:38px;
+}
+
+.hero-text h3{
+font-size:22px;
+}
+
+.title{
+font-size:30px;
+}
+
+.btn,
+.btn2{
+display:block;
+margin:10px auto;
+width:220px;
+text-align:center;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:500px){
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.circle{
+width:180px;
+height:180px;
+font-size:60px;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+}
